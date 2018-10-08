@@ -31,5 +31,5 @@ test('should handle onSubmit', () => {
 test('should handle removeExpense', () => {
     wrapper.find('button').simulate('click');
     expect(startRemoveExpense).toHaveBeenLastCalledWith({id: '1'});
-    expect(history.push).toHaveBeenLastCalledWith('/');
+    expect(history.push).toHaveBeenLastCalledWith('/dashboard');
 });
